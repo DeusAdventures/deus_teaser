@@ -1,0 +1,785 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap");
+@font-face {
+  font-family: visbyRegular;
+  src: url("../fonts/visbyCF-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/visbyCF-Regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/visbyCF-Regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/visbyCF-Regular.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/visbyCF-Regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/visbyCF-Regular.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: visbyBold;
+  src: url("../fonts/visbyCF-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/visbyCF-Bold.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/visbyCF-Bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/visbyCF-Bold.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/visbyCF-Bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/visbyCF-Bold.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: visbyHeavy;
+  src: url("../fonts/VisbyCF-Heavy.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/VisbyCF-Heavy.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/VisbyCF-Heavy.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/VisbyCF-Heavy.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/VisbyCF-Heavy.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/VisbyCF-Heavy.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+
+$black: #000;
+$white: #fff;
+$pointColor1: #00a3c8;
+$pointColor2: #005a6f;
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 640px;
+$breakpoint-desktop: 1024px;
+$breakpoint-bigScreen: 1400px;
+
+input,
+button,
+textarea {
+  appearance: none;
+  border: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointColorText {
+  color: $pointColor1;
+}
+
+.marginBottom60 {
+  margin-bottom: 60px !important;
+}
+
+.marginTop60 {
+  margin-top: 60px !important;
+}
+
+.marginTop0 {
+  margin-top: 0 !important;
+}
+
+.marginBottom0 {
+  margin-bottom: 0 !important;
+}
+
+.shortDivider {
+  background: #585b5d;
+  width: 150px;
+  height: 1px;
+  margin: 60px 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.headNavigation {
+  width: 100%;
+  padding: 0 60px;
+  box-sizing: border-box;
+  display: flex;
+  margin: 35px 0 60px;
+  /*모바일*/
+  @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+    display: block;
+  }
+  /*//모바일*/
+  .left {
+    width: 50%;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      width: 100%;
+      text-align: center;
+    }
+    /*//모바일*/
+  }
+  .right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      li {
+        font-size: 15px;
+        margin-right: 45px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: #000;
+        }
+      }
+    }
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      display: none;
+    }
+    /*//모바일*/
+  }
+}
+
+.headContent {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  /*모바일*/
+  @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  /*//모바일*/
+  h1 {
+    font-family: visbyHeavy;
+    font-size: 50px;
+    line-height: 70px;
+  }
+  h2 {
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $pointColor1;
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+.headContentImage {
+  width: 100%;
+  height: 600px;
+  background: url(../img/head_img.jpg) no-repeat center right;
+  background-size: cover;
+  margin: 60px 0;
+}
+
+.headContentImagePartner {
+  width: 100%;
+  height: 400px;
+  background: url(../img/head_img.jpg) no-repeat center center;
+  background-size: cover;
+  margin: 60px 0;
+}
+
+.first {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  /*모바일*/
+  @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: block;
+  }
+  /*//모바일*/
+  .left {
+    width: 50%;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      width: 100%;
+    }
+    /*//모바일*/
+    h1 {
+      font-size: 35px;
+      line-height: 50px;
+      font-family: visbyHeavy;
+    }
+    h2 {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 500;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+  .right {
+    width: 50%;
+    height: 450px;
+    margin-left: 100px;
+    background: url(../img/first_img.jpg) center center no-repeat;
+    background-size: cover;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+    /*//모바일*/
+  }
+  .areYouReady {
+    width: 50%;
+    height: 450px;
+    margin-left: 100px;
+    background: url(../img/ready_img.jpg) center center no-repeat;
+    background-size: cover;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+    /*//모바일*/
+  }
+}
+
+.second {
+  width: 100%;
+  background: #28292a;
+  padding: 60px 0 0;
+  margin: 60px 0;
+  /*모바일*/
+  @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+    padding: 60px 30px 0;
+    box-sizing: border-box;
+  }
+  /*//모바일*/
+  .inside {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .box {
+    display: flex;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      display: block;
+    }
+    .left {
+      width: 50%;
+      /*모바일*/
+      @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+        width: 100%;
+      }
+      /*//모바일*/
+      h1 {
+        font-family: visbyHeavy;
+        font-size: 35px;
+        line-height: 50px;
+        color: $white;
+      }
+    }
+    .right {
+      width: 50%;
+      margin-left: 100px;
+      p {
+        font-size: 15px;
+        line-height: 30px;
+        color: $white;
+      }
+      /*모바일*/
+      @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+      }
+      /*//모바일*/
+    }
+  }
+  .imgBox {
+    text-align: center;
+    img {
+      margin: 60px auto 0;
+      max-width: 675px;
+      /*모바일*/
+      @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+        width: 100%;
+      }
+      /*//모바일*/
+    }
+  }
+}
+
+.third {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  /*모바일*/
+  @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  /*//모바일*/
+  ul {
+    display: flex;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      display: block;
+    }
+    /*//모바일*/
+    li {
+      width: 25%;
+      padding: 20px;
+      line-height: 30px;
+      font-size: 15px;
+      font-weight: 700;
+      box-sizing: border-box;
+      margin-right: 20px;
+      border: 1px solid #ebeded;
+      &:last-child {
+        margin-right: 0;
+      }
+      /*모바일*/
+      @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      /*//모바일*/
+    }
+  }
+}
+
+.fourth {
+  width: 100%;
+  background: #f8fafa;
+  padding: 60px 0;
+  /*모바일*/
+  @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+    padding: 60px 30px;
+    box-sizing: border-box;
+  }
+  /*//모바일*/
+  .inside {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      display: block;
+    }
+    /*//모바일*/
+    .left {
+      width: 50%;
+      /*모바일*/
+      @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+        width: 100%;
+      }
+      /*//모바일*/
+      h1 {
+        font-family: visbyHeavy;
+        font-size: 35px;
+        line-height: 50px;
+      }
+      h2 {
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+    }
+    .right {
+      width: 50%;
+      /*모바일*/
+      @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+        width: 100%;
+        margin-top: 30px;
+      }
+      /*//모바일*/
+      .contactBox {
+        ul {
+          li {
+            margin-bottom: 25px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            p {
+              font-size: 15px;
+              margin-bottom: 15px;
+            }
+            .textBox {
+              width: 100%;
+              padding: 15px;
+              border: 1px solid #ebeded;
+              font-size: 13px;
+              border-radius: 5px;
+              transition: border 0.2s ease-in-out;
+              box-sizing: border-box;
+              &:focus {
+                border: 1px solid $pointColor1;
+              }
+            }
+            textarea {
+              height: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  max-width: 1100px;
+  margin: 60px auto 260px;
+  display: flex;
+  font-size: 12px;
+  /*모바일*/
+  @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+    display: block;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin: 60px auto 360px;
+  }
+  /*//모바일*/
+  .left {
+    width: 50%;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      width: 100%;
+      text-align: center;
+    }
+    /*//모바일*/
+  }
+  .right {
+    a {
+      font-size: 15px;
+      color: $pointColor1;
+    }
+    width: 50%;
+    text-align: right;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+    }
+    /*//모바일*/
+  }
+}
+
+.bottomBox {
+  width: 100%;
+  background: $pointColor1;
+  // border: 1px solid #ebeded;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  .inside {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      display: block;
+      padding: 0 30px;
+      box-sizing: border-box;
+    }
+    /*//모바일*/
+    .left {
+      width: 50%;
+      color: $white;
+      /*모바일*/
+      @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+        width: 100%;
+        text-align: center;
+      }
+      /*//모바일*/
+      h2 {
+        font-family: visbyBold;
+        color: $white;
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: $pointColor2;
+      }
+      h1 {
+        font-family: visbyHeavy;
+        font-size: 25px;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.15);
+        display: inline-block;
+      }
+      .timeTable {
+        ul {
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-start;
+          /*모바일*/
+          @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+            justify-content: center;
+          }
+          /*//모바일*/
+          li {
+            margin-right: 5px;
+            &:last-child {
+              margin-right: 0;
+            }
+            h1 {
+              font-family: visbyHeavy;
+              font-size: 22px;
+              padding: 10px;
+              background: rgba(0, 0, 0, 0.15);
+              display: inline-block;
+              /*모바일*/
+              @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+                font-size: 18px;
+                padding: 8px;
+              }
+              /*//모바일*/
+            }
+          }
+        }
+      }
+      .smallText {
+        font-size: 12px;
+        letter-spacing: 0;
+        font-family: visbyRegular;
+      }
+    }
+    .right {
+      width: 50%;
+      /*모바일*/
+      @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+        width: 100%;
+        margin-top: 60px;
+        text-align: center;
+      }
+      /*//모바일*/
+      h1 {
+        font-family: visbyBold;
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: $pointColor2;
+      }
+      .emailBox {
+        display: flex;
+        .textBox {
+          width: 100%;
+          padding: 15px;
+          border: 1px solid #ebeded;
+          font-size: 13px;
+          border-radius: 5px;
+        }
+        .button {
+          padding: 20px;
+          color: $white;
+          background: $pointColor2;
+          border-radius: 5px;
+          margin-left: 15px;
+          font-size: 15px;
+          transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+          &:hover {
+            background: $white;
+            color: $pointColor2;
+          }
+        }
+      }
+    }
+  }
+}
+
+// bgVideo
+#video-bg {
+  position: relative;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  background: transparent url(video-bg.jpg) no-repeat;
+  /*모바일*/
+  @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+    display: none;
+  }
+  /*//모바일*/
+}
+video {
+  display: block;
+}
+.video-container {
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+// bgVideo
+
+.partner {
+  background: url(../img/head_img_partner.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  .headNavigation {
+    width: 100%;
+    padding: 35px 60px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      display: block;
+    }
+    /*//모바일*/
+    .left {
+      width: 50%;
+      /*모바일*/
+      @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+        width: 100%;
+        text-align: center;
+      }
+      /*//모바일*/
+    }
+    .right {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+          font-size: 15px;
+          margin-right: 45px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            color: $white;
+          }
+        }
+      }
+      /*모바일*/
+      @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+        display: none;
+      }
+      /*//모바일*/
+    }
+  }
+
+  .headContent {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /*모바일*/
+    @media only screen and (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
+      padding: 0 30px;
+      box-sizing: border-box;
+    }
+    /*//모바일*/
+    h1 {
+      font-family: visbyHeavy;
+      font-size: 50px;
+      line-height: 70px;
+      color: $white;
+    }
+    h2 {
+      font-weight: 500;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: $pointColor1;
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 30px;
+      color: $white;
+    }
+  }
+}
+
+.fifth {
+  width: 100%;
+  padding: 100px 0;
+  background: url(../img/head_img_partner.jpg) center center no-repeat;
+  background-size: cover;
+  .inside {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      font-size: 35px;
+      font-family: visbyHeavy;
+      color: $white;
+    }
+    p {
+      font-size: 15px;
+      color: $white;
+      line-height: 30px;
+      margin-top: 20px;
+    }
+    .button {
+      padding: 20px;
+      color: $white;
+      background: $pointColor1;
+      border-radius: 5px;
+      font-size: 15px;
+      margin: 30px auto 0;
+      transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+      &:hover {
+        background: $white;
+        color: $pointColor1;
+      }
+    }
+  }
+}
+
+.sixth {
+  width: 100%;
+  padding: 100px 0;
+  background: url(../img/head_img_partner2.jpg) center center no-repeat;
+  background-size: cover;
+  .inside {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      font-size: 35px;
+      font-family: visbyHeavy;
+      color: $white;
+    }
+    p {
+      font-size: 15px;
+      color: $white;
+      line-height: 30px;
+      margin-top: 20px;
+    }
+    .button {
+      padding: 20px;
+      color: $white;
+      background: $pointColor1;
+      border-radius: 5px;
+      font-size: 15px;
+      margin: 30px auto 0;
+      transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+      &:hover {
+        background: $white;
+        color: $pointColor1;
+      }
+    }
+  }
+}

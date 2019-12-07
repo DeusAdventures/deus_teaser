@@ -1,0 +1,1005 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap");
+@font-face {
+  font-family: visbyRegular;
+  src: url("../fonts/visbyCF-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/visbyCF-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/visbyCF-Regular.woff2") format("woff2"), url("../fonts/visbyCF-Regular.woff") format("woff"), url("../fonts/visbyCF-Regular.ttf") format("truetype"), url("../fonts/visbyCF-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: visbyBold;
+  src: url("../fonts/visbyCF-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/visbyCF-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/visbyCF-Bold.woff2") format("woff2"), url("../fonts/visbyCF-Bold.woff") format("woff"), url("../fonts/visbyCF-Bold.ttf") format("truetype"), url("../fonts/visbyCF-Bold.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: visbyHeavy;
+  src: url("../fonts/VisbyCF-Heavy.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/VisbyCF-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/VisbyCF-Heavy.woff2") format("woff2"), url("../fonts/VisbyCF-Heavy.woff") format("woff"), url("../fonts/VisbyCF-Heavy.ttf") format("truetype"), url("../fonts/VisbyCF-Heavy.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+input,
+button,
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointColorText {
+  color: #00a3c8;
+}
+
+.marginBottom60 {
+  margin-bottom: 60px !important;
+}
+
+.marginTop60 {
+  margin-top: 60px !important;
+}
+
+.marginTop0 {
+  margin-top: 0 !important;
+}
+
+.marginBottom0 {
+  margin-bottom: 0 !important;
+}
+
+.shortDivider {
+  background: #585b5d;
+  width: 150px;
+  height: 1px;
+  margin: 60px 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.headNavigation {
+  width: 100%;
+  padding: 0 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 35px 0 60px;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .headNavigation {
+    display: block;
+  }
+}
+
+.headNavigation .left {
+  width: 50%;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .headNavigation .left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.headNavigation .right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*모바일*/
+  /*//모바일*/
+}
+
+.headNavigation .right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.headNavigation .right ul li {
+  font-size: 15px;
+  margin-right: 45px;
+}
+
+.headNavigation .right ul li:last-child {
+  margin-right: 0;
+}
+
+.headNavigation .right ul li a {
+  color: #000;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .headNavigation .right {
+    display: none;
+  }
+}
+
+.headContent {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .headContent {
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.headContent h1 {
+  font-family: visbyHeavy;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.headContent h2 {
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #00a3c8;
+  font-size: 20px;
+}
+
+.headContent p {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.headContentImage {
+  width: 100%;
+  height: 600px;
+  background: url(../img/head_img.jpg) no-repeat center right;
+  background-size: cover;
+  margin: 60px 0;
+}
+
+.headContentImagePartner {
+  width: 100%;
+  height: 400px;
+  background: url(../img/head_img.jpg) no-repeat center center;
+  background-size: cover;
+  margin: 60px 0;
+}
+
+.first {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .first {
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+  }
+}
+
+.first .left {
+  width: 50%;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .first .left {
+    width: 100%;
+  }
+}
+
+.first .left h1 {
+  font-size: 35px;
+  line-height: 50px;
+  font-family: visbyHeavy;
+}
+
+.first .left h2 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.first .left p {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.first .right {
+  width: 50%;
+  height: 450px;
+  margin-left: 100px;
+  background: url(../img/first_img.jpg) center center no-repeat;
+  background-size: cover;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .first .right {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.first .areYouReady {
+  width: 50%;
+  height: 450px;
+  margin-left: 100px;
+  background: url(../img/ready_img.jpg) center center no-repeat;
+  background-size: cover;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .first .areYouReady {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.second {
+  width: 100%;
+  background: #28292a;
+  padding: 60px 0 0;
+  margin: 60px 0;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .second {
+    padding: 60px 30px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.second .inside {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.second .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .second .box {
+    display: block;
+  }
+}
+
+.second .box .left {
+  width: 50%;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .second .box .left {
+    width: 100%;
+  }
+}
+
+.second .box .left h1 {
+  font-family: visbyHeavy;
+  font-size: 35px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.second .box .right {
+  width: 50%;
+  margin-left: 100px;
+  /*모바일*/
+  /*//모바일*/
+}
+
+.second .box .right p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .second .box .right {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.second .imgBox {
+  text-align: center;
+}
+
+.second .imgBox img {
+  margin: 60px auto 0;
+  max-width: 675px;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .second .imgBox img {
+    width: 100%;
+  }
+}
+
+.third {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .third {
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.third ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .third ul {
+    display: block;
+  }
+}
+
+.third ul li {
+  width: 25%;
+  padding: 20px;
+  line-height: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 20px;
+  border: 1px solid #ebeded;
+  /*모바일*/
+  /*//모바일*/
+}
+
+.third ul li:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .third ul li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .third ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fourth {
+  width: 100%;
+  background: #f8fafa;
+  padding: 60px 0;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .fourth {
+    padding: 60px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.fourth .inside {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .fourth .inside {
+    display: block;
+  }
+}
+
+.fourth .inside .left {
+  width: 50%;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .fourth .inside .left {
+    width: 100%;
+  }
+}
+
+.fourth .inside .left h1 {
+  font-family: visbyHeavy;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.fourth .inside .left h2 {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.fourth .inside .right {
+  width: 50%;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .fourth .inside .right {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.fourth .inside .right .contactBox ul li {
+  margin-bottom: 25px;
+}
+
+.fourth .inside .right .contactBox ul li:last-child {
+  margin-bottom: 0;
+}
+
+.fourth .inside .right .contactBox ul li p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.fourth .inside .right .contactBox ul li .textBox {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ebeded;
+  font-size: 13px;
+  border-radius: 5px;
+  -webkit-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.fourth .inside .right .contactBox ul li .textBox:focus {
+  border: 1px solid #00a3c8;
+}
+
+.fourth .inside .right .contactBox ul li textarea {
+  height: 200px;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1100px;
+  margin: 60px auto 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .footer {
+    display: block;
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 60px auto 360px;
+  }
+}
+
+.footer .left {
+  width: 50%;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .footer .left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer .right {
+  width: 50%;
+  text-align: right;
+  /*모바일*/
+  /*//모바일*/
+}
+
+.footer .right a {
+  font-size: 15px;
+  color: #00a3c8;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .footer .right {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+.bottomBox {
+  width: 100%;
+  background: #00a3c8;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.bottomBox .inside {
+  width: 100%;
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .bottomBox .inside {
+    display: block;
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.bottomBox .inside .left {
+  width: 50%;
+  color: #fff;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .bottomBox .inside .left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.bottomBox .inside .left h2 {
+  font-family: visbyBold;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #005a6f;
+}
+
+.bottomBox .inside .left h1 {
+  font-family: visbyHeavy;
+  font-size: 25px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.15);
+  display: inline-block;
+}
+
+.bottomBox .inside .left .timeTable ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .bottomBox .inside .left .timeTable ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.bottomBox .inside .left .timeTable ul li {
+  margin-right: 5px;
+}
+
+.bottomBox .inside .left .timeTable ul li:last-child {
+  margin-right: 0;
+}
+
+.bottomBox .inside .left .timeTable ul li h1 {
+  font-family: visbyHeavy;
+  font-size: 22px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .bottomBox .inside .left .timeTable ul li h1 {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+.bottomBox .inside .left .smallText {
+  font-size: 12px;
+  letter-spacing: 0;
+  font-family: visbyRegular;
+}
+
+.bottomBox .inside .right {
+  width: 50%;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .bottomBox .inside .right {
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+.bottomBox .inside .right h1 {
+  font-family: visbyBold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #005a6f;
+}
+
+.bottomBox .inside .right .emailBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottomBox .inside .right .emailBox .textBox {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ebeded;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.bottomBox .inside .right .emailBox .button {
+  padding: 20px;
+  color: #fff;
+  background: #005a6f;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-size: 15px;
+  -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.bottomBox .inside .right .emailBox .button:hover {
+  background: #fff;
+  color: #005a6f;
+}
+
+#video-bg {
+  position: relative;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  background: transparent url(video-bg.jpg) no-repeat;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  #video-bg {
+    display: none;
+  }
+}
+
+video {
+  display: block;
+}
+
+.video-container {
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.partner {
+  background: url(../img/head_img_partner.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+
+.partner .headNavigation {
+  width: 100%;
+  padding: 35px 60px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .partner .headNavigation {
+    display: block;
+  }
+}
+
+.partner .headNavigation .left {
+  width: 50%;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .partner .headNavigation .left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.partner .headNavigation .right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*모바일*/
+  /*//모바일*/
+}
+
+.partner .headNavigation .right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.partner .headNavigation .right ul li {
+  font-size: 15px;
+  margin-right: 45px;
+}
+
+.partner .headNavigation .right ul li:last-child {
+  margin-right: 0;
+}
+
+.partner .headNavigation .right ul li a {
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .partner .headNavigation .right {
+    display: none;
+  }
+}
+
+.partner .headContent {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  /*모바일*/
+  /*//모바일*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .partner .headContent {
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.partner .headContent h1 {
+  font-family: visbyHeavy;
+  font-size: 50px;
+  line-height: 70px;
+  color: #fff;
+}
+
+.partner .headContent h2 {
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #00a3c8;
+  font-size: 20px;
+}
+
+.partner .headContent p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.fifth {
+  width: 100%;
+  padding: 100px 0;
+  background: url(../img/head_img_partner.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.fifth .inside {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fifth .inside h1 {
+  font-size: 35px;
+  font-family: visbyHeavy;
+  color: #fff;
+}
+
+.fifth .inside p {
+  font-size: 15px;
+  color: #fff;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.fifth .inside .button {
+  padding: 20px;
+  color: #fff;
+  background: #00a3c8;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 30px auto 0;
+  -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.fifth .inside .button:hover {
+  background: #fff;
+  color: #00a3c8;
+}
+
+.sixth {
+  width: 100%;
+  padding: 100px 0;
+  background: url(../img/head_img_partner2.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.sixth .inside {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sixth .inside h1 {
+  font-size: 35px;
+  font-family: visbyHeavy;
+  color: #fff;
+}
+
+.sixth .inside p {
+  font-size: 15px;
+  color: #fff;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.sixth .inside .button {
+  padding: 20px;
+  color: #fff;
+  background: #00a3c8;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 30px auto 0;
+  -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.sixth .inside .button:hover {
+  background: #fff;
+  color: #00a3c8;
+}
+/*# sourceMappingURL=style.css.map */
